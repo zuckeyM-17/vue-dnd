@@ -3,7 +3,6 @@ const path = require('path');
 const projectRoot = path.resolve(__dirname, './')
 
 module.exports = {
-  watch: true,
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',

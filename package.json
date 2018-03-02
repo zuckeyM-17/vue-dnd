@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch",
-    "vue": "vue",
+    "build": "webpack",
     "lint": "prettier --write src/**/*.js src/**/*.vue .webpack.config.js"
   },
   "repository": {
