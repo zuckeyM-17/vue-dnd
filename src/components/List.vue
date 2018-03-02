@@ -30,3 +30,11 @@ export default Vue.extend({
   }
 });
 </script>
+
+<style scoped>
+ul {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+</style>

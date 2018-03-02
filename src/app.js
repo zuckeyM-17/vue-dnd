@@ -26,14 +26,11 @@ const board = [
 
 const app = new Vue({
   el: "#app",
-  data: {
-    board: board
-  },
+  data: { board: board },
   components: { List },
   template:
     '<div style="margin: 50px; display: flex">\
     <List\
-      style="display: flex; flex-direction: column; width: 300px;"\
       v-for="list in board"\
       v-model="board"\
       :list="list"\
