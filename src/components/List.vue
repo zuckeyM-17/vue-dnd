@@ -14,7 +14,7 @@
 <script>
 import Vue from "vue";
 import ListItem from "./ListItem";
-import draggable from 'vuedraggable';
+import draggable from "vuedraggable";
 
 export default Vue.extend({
   components: { draggable, ListItem },
@@ -22,11 +22,11 @@ export default Vue.extend({
   data() {
     return {
       options: {
-        handle: '.drag-handler',
-        group: 'board',
-        animation: 100,
+        handle: ".drag-handler",
+        group: "board",
+        animation: 100
       }
     };
-  },
+  }
 });
 </script>
