@@ -1,0 +1,37 @@
+{
+  "name": "vue-dnd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch",
+    "vue": "vue",
+    "lint": "prettier --write src/**/*.js src/**/*.vue .webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuckeyM-17/vue-dnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuckeyM-17/vue-dnd/issues"
+  },
+  "homepage": "https://github.com/zuckeyM-17/vue-dnd#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "prettier": "^1.11.1",
+    "vue": "^2.5.13",
+    "vue-cli": "^2.9.3",
+    "vue-loader": "^14.1.1",
+    "vue-template-compiler": "^2.5.13",
+    "vuedraggable": "^2.16.0",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  }
+}
