@@ -1,5 +1,5 @@
 <template>
-  <li><span class="drag-handler"><i class="fas fa-genderless"></i></span>{{ item.title }}</li>
+  <li><span class="drag-handler">:::</span>{{ item.title }}</li>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ span {
   margin: 0px 3px;
 }
 
-span :hover {
+.drag-handler :hover {
   cursor: pointer;
 }
 
