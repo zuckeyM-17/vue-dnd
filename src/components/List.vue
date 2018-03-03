@@ -1,13 +1,12 @@
 <template>
   <draggable
-    v-model="list"
     :options="options"
     element="ul"
   >
-    <ListItem
+    <list-item
       v-for="item in list"
       :key="item.id"
-      :item="item"></LIstItem>
+      :item="item"></list-item>
   </draggable>
 </template>
 
@@ -36,5 +35,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 300px;
+  border: 1px solid #cccccc;
+  margin: 5px;
 }
 </style>
