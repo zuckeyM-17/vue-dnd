@@ -7,9 +7,9 @@
         :key="item.id"
         :item="item"
       ></list-item>
-      <input type="text" v-model="input"/>
-      <button @click="addItem"> add </button>
     </draggable>
+    <input type="text" v-model="input"/>
+    <button @click="addItem"> add </button>
   </div>
 </template>
 
@@ -44,5 +44,9 @@ ul {
   width: 300px;
   border: 1px solid #cccccc;
   margin: 5px;
+}
+
+input {
+  margin: 0 5px;
 }
 </style>
