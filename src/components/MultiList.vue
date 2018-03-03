@@ -4,7 +4,7 @@
     <div style="display: flex">
       <draggable
         :options="options"
-        :element="ul"
+        element="ul"
         v-for="list in board"
         :key="board.indexOf(list)"
       >

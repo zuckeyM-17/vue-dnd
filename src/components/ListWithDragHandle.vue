@@ -2,13 +2,15 @@
   <div style="margin: 50px;">
     <p>ドラッグハンドルありのリスト</p>
     <draggable
-      :element="ul"
+      element="ul"
       :options="options"
     >
       <list-item
         v-for="item in list"
         :key="item.id"
-        :item="item"></list-item>
+        :item="item"
+        :dragHandle="true"
+        ></list-item>
     </draggable>
   </div>
 </template>

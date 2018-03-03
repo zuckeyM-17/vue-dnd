@@ -1,7 +1,7 @@
 <template>
   <div style="margin: 50px;">
     <p>1列リスト</p>
-    <draggable :element="ul">
+    <draggable element="ul">
       <list-item
         v-for="item in list"
         :key="item.id"

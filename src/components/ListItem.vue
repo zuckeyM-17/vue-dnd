@@ -1,12 +1,15 @@
 <template>
-  <li><span class="drag-handler">:::</span>{{ item.title }}</li>
+  <li><span v-if="dragHandle" class="drag-handler">:::</span>{{ item.title }}</li>
 </template>
 
 <script>
 import Vue from "vue";
 
 export default Vue.extend({
-  props: ["item"]
+  props: {
+    item: Object,
+    dragHandle: false
+  }
 });
 </script>
 
