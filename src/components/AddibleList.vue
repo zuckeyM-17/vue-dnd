@@ -4,7 +4,7 @@
     <draggable element="ul">
       <list-item
         v-for="item in list"
-        :key="item.id"
+        :key="list.indexOf(item)"
         :item="item"
       ></list-item>
     </draggable>
@@ -27,10 +27,7 @@ export default Vue.extend({
   methods: {
     addItem: function(e) {
       e.preventDefault();
-      this.list = this.list.concat({
-        id: this.list.length,
-        title: this.input
-      });
+      this.list = this.list.concat(this.input);
       this.input = "";
     }
   }

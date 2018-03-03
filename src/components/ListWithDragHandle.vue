@@ -7,7 +7,7 @@
     >
       <list-item
         v-for="item in list"
-        :key="item.id"
+        :key="list.indexOf(item)"
         :item="item"
         :dragHandle="true"
         ></list-item>

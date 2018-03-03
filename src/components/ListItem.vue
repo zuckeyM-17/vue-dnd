@@ -1,5 +1,5 @@
 <template>
-  <li><span v-if="dragHandle" class="drag-handler">:::</span>{{ item.title }}</li>
+  <li><span v-if="dragHandle" class="drag-handler">:::</span>{{ item }}</li>
 </template>
 
 <script>
@@ -7,7 +7,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    item: Object,
+    item: String,
     dragHandle: false
   }
 });
