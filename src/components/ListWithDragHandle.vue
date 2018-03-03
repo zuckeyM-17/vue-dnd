@@ -1,7 +1,10 @@
 <template>
   <div style="margin: 50px;">
-    <p>1列リスト</p>
-    <draggable :element="ul">
+    <p>ドラッグハンドルありのリスト</p>
+    <draggable
+      :element="ul"
+      :options="options"
+    >
       <list-item
         v-for="item in list"
         :key="item.id"
@@ -17,7 +20,14 @@ import draggable from "vuedraggable";
 
 export default Vue.extend({
   components: { draggable, ListItem },
-  props: ["list"]
+  props: ["list"],
+  data() {
+    return {
+      options: {
+        handle: ".drag-handler"
+      }
+    };
+  }
 });
 </script>
 

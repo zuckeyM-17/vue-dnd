@@ -2,6 +2,7 @@ import Vue from "vue";
 import List from "./components/List";
 import MultiList from "./components/MultiList";
 import AddibleList from "./components/AddibleList";
+import ListWithDragHandle from "./components/ListWithDragHandle";
 
 Vue.config.productionTip = false;
 
@@ -52,4 +53,11 @@ new Vue({
   data: { list: list },
   components: { AddibleList },
   template: '<addible-list :list="list"></editable-list>'
+});
+
+new Vue({
+  el: "#list-with-drag-handle",
+  data: { list: list },
+  components: { ListWithDragHandle },
+  template: '<list-with-drag-handle :list="list"></list-with-drag-handle>'
 });

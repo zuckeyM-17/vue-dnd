@@ -22,7 +22,7 @@ export default Vue.extend({
   components: { draggable, ListItem },
   props: ["list"],
   data() {
-    return { input: '' }
+    return { input: "" };
   },
   methods: {
     addItem: function(e) {
@@ -31,7 +31,7 @@ export default Vue.extend({
         id: this.list.length,
         title: this.input
       });
-      this.input = '';
+      this.input = "";
     }
   }
 });
