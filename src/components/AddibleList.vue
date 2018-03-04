@@ -7,9 +7,11 @@
         :key="list.indexOf(item)"
         :item="item"
       ></list-item>
+      <div slot="footer">
+        <input type="text" v-model="input"/>
+        <button @click="addItem">Add</button>
+      </div>
     </draggable>
-    <input type="text" v-model="input"/>
-    <button @click="addItem"> add </button>
   </div>
 </template>
 
